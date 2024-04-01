@@ -1,7 +1,9 @@
 RewriteEngine on
 
-RewriteRule ^home/?$ index.php [L]
+RewriteRule ^login/?$ index.php [L]
 RewriteRule ^register/?$ register.php [L]
+RewriteRule ^home/?$ home.php [L]
+RewriteRule ^logout/?$ logout.php [L]
 
 
 RewriteCond %{REQUEST_FILENAME} !-f

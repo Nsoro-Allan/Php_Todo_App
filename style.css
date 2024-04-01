@@ -29,7 +29,7 @@ body {
 }
 
 .form-left img {
-  width: 80%;
+  width: 75%;
   border-radius: 25px;
 }
 
@@ -81,6 +81,15 @@ body {
 }
 
 .form-right form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1.5px solid black;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  outline-color: #007cff;
+}
+
+.form-right form select {
   padding: 10px;
   border-radius: 6px;
   border: 1.5px solid black;
