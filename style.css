@@ -43,11 +43,90 @@ body {
   background: #007cff;
 }
 
+.form-right .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 6px 10px;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+}
+
+.form-right .title img {
+  width: 15%;
+}
+
+.form-right .title h1 {
+  color: #fff;
+  font-style: italic;
+  letter-spacing: 1.2px;
+}
+
 .form-right form {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 8px;
   background: #fff;
-  width:50%;
+  width: 80%;
+}
+
+.form-right form label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.form-right form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1.5px solid black;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  outline-color: #007cff;
+}
+
+::placeholder {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.form-right form button {
+  padding: 10px;
+  font-weight: 500;
+  border: none;
+  margin-top: 15px;
+  background: #007cff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  width: 30%;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.form-right form button:hover {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background: #0060cf;
+}
+
+.form-right form p {
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.form-right form p a {
+  color: black;
+  font-weight: 700;
+}
+
+.form-right form p a:hover {
+  color: #007cff;
 }

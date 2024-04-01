@@ -21,6 +21,11 @@ include("connection.php");
 
         <div class="form-right">
 
+            <div class="title">
+                <img src="./images/icon.ico" alt="">
+                <h1>Todo App</h1>
+            </div>
+
             <form action="" method="post">
 
                 <label>Username:</label>
@@ -31,7 +36,7 @@ include("connection.php");
 
                 <button type="submit" name="login">Login...</button>
 
-                <p>Don't have an account ? <a href="./register">Register</a></p>
+                <p>Don't have an account ? <a href="./register">Register.</a></p>
 
             </form>
 
