@@ -27,7 +27,79 @@ include("connection.php");
 
             <div class="content-container">
 
-                <div class="content">
+                <div class="main-content">
+
+                    <div class="start">
+                        <form action="">
+                            <input type="checkbox" name="done">
+                        </form>
+                    </div>
+
+                    <div class="middle">
+                        <h4>Coding Today...</h4>
+                    </div>
+
+                    <div class="stop">
+                        <a href="#"><img src="./images/delete.ico"></a>
+                    </div>
+
+                </div>
+
+                <div class="main-content">
+
+                    <div class="start">
+                        <form action="">
+                            <input type="checkbox" name="done">
+                        </form>
+                    </div>
+
+                    <div class="middle">
+                        <h4>Do Body Workout...</h4>
+                    </div>
+
+                    <div class="stop">
+                        <a href="#"><img src="./images/delete.ico"></a>
+                    </div>
+
+                </div>
+
+                <div class="main-content">
+
+                    <div class="start">
+                        <form action="">
+                            <input type="checkbox" name="done">
+                        </form>
+                    </div>
+
+                    <div class="middle">
+                        <h4>Go to Church...</h4>
+                    </div>
+
+                    <div class="stop">
+                        <a href="#"><img src="./images/delete.ico"></a>
+                    </div>
+
+                </div>
+
+                <div class="main-content">
+
+                    <div class="start">
+                        <form action="">
+                            <input type="checkbox" name="done">
+                        </form>
+                    </div>
+
+                    <div class="middle">
+                        <h4>Go to a meeting...</h4>
+                    </div>
+
+                    <div class="stop">
+                        <a href="#"><img src="./images/delete.ico"></a>
+                    </div>
+
+                </div>
+
+                <!-- <div class="content">
 
                     <div class="img-cont">
                         
@@ -36,10 +108,6 @@ include("connection.php");
                         <h4>No Tasks Available...</h4>
                     </div>
 
-                </div>
-
-                <!-- <div class="content">
-                    <div class="title"></div>
                 </div> -->
     
             </div>

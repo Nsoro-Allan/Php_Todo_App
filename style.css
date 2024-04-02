@@ -223,6 +223,56 @@ body {
   border-bottom-left-radius: 10px;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid#007cff;
+  padding: 10px;
+}
+
+.main-content .start {
+  display: flex;
+  flex-direction: row;
+  width: 5%;
+}
+
+.main-content .start form {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.main-content .start form input {
+  padding: 10px;
+  width: 100%;
+  height: 3vh;
+}
+
+.main-content .middle {
+  width: 88%;
+}
+
+.main-content .middle h4 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.main-content .stop {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content .stop img {
+  width: 70%;
+}
+
 .content-container .content {
   display: flex;
   flex-direction: column;
