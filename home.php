@@ -28,8 +28,19 @@ include("connection.php");
             <div class="content-container">
 
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
+
+                    <div class="img-cont">
+                        
+                        <img src="./images/no_task.png" alt="">
+
+                        <h4>No Tasks Available...</h4>
+                    </div>
+
                 </div>
+
+                <!-- <div class="content">
+                    <div class="title"></div>
+                </div> -->
     
             </div>
 
