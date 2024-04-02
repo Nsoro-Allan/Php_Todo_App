@@ -36,8 +36,8 @@ include("connection.php");
             <div class="end">
 
                 <form action="" method="post">
-                    <input type="text" name="task_name" placeholder="Enter your task name...">
-                    <button type="submit" name="add_task">Add Task</button>
+                    <input type="text" name="task_name" placeholder="Enter your task name..." required>
+                    <button type="submit" name="add_task">Add Task...</button>
                 </form>
 
             </div>
