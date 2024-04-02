@@ -30,35 +30,7 @@ include("connection.php");
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
                 </div>
-
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
-                </div>
-
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
-                </div>
-
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
-                </div>
-
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
-                </div>
-
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
-                </div>
-
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
-                </div>
-
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi. Fugiat distinctio fuga vitae veniam, beatae voluptatem animi aliquid, dolorem natus, magnam ipsam dolores suscipit. Dolorum totam aliquam deserunt accusantium.</p>
-                </div>
-                                
+    
             </div>
 
             <div class="end">

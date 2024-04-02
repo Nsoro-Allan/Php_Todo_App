@@ -248,6 +248,34 @@ body {
   border-radius: 10px;
   border: 2px solid#007cff;
   padding: 10px;
+  gap: 10px;
+}
+
+.end form input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #007cff;
+  font-size: 0.9rem;
+  outline: #007cff;
+}
+
+.end form button {
+  width: 20%;
+  padding: 10px 15px;
+  background: #007cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.end form button:hover {
+  cursor: pointer;
+  background: #0060cf;
+  transition: 0.3s ease-in-out;
 }
 
 /* Main Container Ends Here */
