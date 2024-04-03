@@ -30,6 +30,24 @@ if(isset($_POST['add_task'])){
 
 }
 
+// Update Task
+if(isset($_POST['task_id']) && isset($_POST['completed'])) {
+    $task_id = $_POST['task_id'];
+    $completed = $_POST['completed'];
+
+    // Toggle completed status
+    $new_completed = ($completed == 0) ? 1 : 0;
+
+    $update = $con->query("UPDATE `tasks` SET `completed`='$new_completed' WHERE `user_id`='$u_id' AND `task_id`='$task_id'");
+
+    if($update) {
+        header("Location: home");
+    } else {
+        header("Location: home?msg=Failed to update task...");
+    }
+}
+
+
 
 ?>
 
@@ -63,14 +81,20 @@ if(isset($_POST['add_task'])){
 
                 while($row=mysqli_fetch_assoc($select)){    
 
+                if($row['completed'] == "0"){
+
+
                 ?>
+
 
                 <div class="main-content">
 
                     <div class="start">
-                        <form action="">
-                            <input type="checkbox" name="done">
-                        </form>
+                    <form action="" method="post">
+                        <input type="hidden" name="task_id" value="<?php echo $row['task_id']; ?>">
+                        <input type="hidden" name="completed" value="<?php echo $row['completed']; ?>">
+                        <input type="checkbox" onchange="this.form.submit()" <?php if($row['completed'] == "1") echo 'checked'; ?>>
+                    </form>
                     </div>
 
                     <div class="middle">
@@ -83,7 +107,37 @@ if(isset($_POST['add_task'])){
 
                 </div>
 
-                <?php    
+                <?php  
+                }
+                else{
+                ?>
+
+                <div class="main-content">
+
+                <div class="start">
+                <form action="" method="post">
+                    <input type="hidden" name="task_id" value="<?php echo $row['task_id']; ?>">
+                    <input type="hidden" name="completed" value="<?php echo $row['completed']; ?>">
+                    <input type="checkbox" onchange="this.form.submit()" <?php if($row['completed'] == "1") echo 'checked'; ?>>
+                </form>
+                </div>
+
+                <div class="middle">
+                    <h4 style="text-decoration: line-through;"><?php echo $row['task_name'];?></h4>
+                </div>
+
+                <div class="stop">
+                    <a href="delete_task?task_id=<?php echo$row['task_id'];?>"><img src="./images/delete.ico"></a>
+                </div>
+
+                </div>
+
+                <?php
+                }
+
+                ?>
+
+                <?php  
                 }
                 }
 
