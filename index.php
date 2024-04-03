@@ -2,6 +2,11 @@
 session_start();
 include("connection.php");
 
+// Check if user is logged in
+if(isset($_SESSION['todo_user'])){
+    header("Location: home");
+}
+
 if(isset($_POST['login'])){
     $username=mysqli_real_escape_string($con, $_POST['username']);
     $password=mysqli_real_escape_string($con, $_POST['password']);

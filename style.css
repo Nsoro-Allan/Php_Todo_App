@@ -257,8 +257,9 @@ body {
 }
 
 .main-content .middle h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: capitalize;
+  color: #007cff;
 }
 
 .main-content .stop {
@@ -296,6 +297,7 @@ body {
 .content-container .content .img-cont h4 {
   font-size: 1.6rem;
   margin-top: 5px;
+  font-style: italic;
 }
 
 .end {

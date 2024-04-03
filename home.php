@@ -2,6 +2,35 @@
 include("sessions.php");
 include("connection.php");
 
+$session_name=$_SESSION['todo_user'];
+$view=$con->query("SELECT * FROM `users` WHERE `username`='$session_name'");
+while($data=mysqli_fetch_assoc($view)){
+    $u_id=$data['user_id'];
+}
+
+// Add Task
+if(isset($_POST['add_task'])){
+    $user_id=$u_id;
+    $task_name=mysqli_real_escape_string($con,$_POST['task_name']);
+    $completed=0;
+    $created_at=date('Y-m-d H:i:s');
+
+    $insert=$con->query("INSERT INTO `tasks`(`task_id`, `user_id`, `task_name`, `completed`, `created_at`) VALUES ('','$user_id','$task_name','$completed','$created_at')");
+
+    if($insert){
+        header("Location: home");
+    }
+
+    else{
+        echo
+        "
+            <script>alert('Failed to add new task...')</script>
+        ";
+    }
+
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -27,23 +56,14 @@ include("connection.php");
 
             <div class="content-container">
 
-                <div class="main-content">
+                <?php
+                $select=$con->query("SELECT * FROM `tasks` WHERE `user_id`='$u_id'");
 
-                    <div class="start">
-                        <form action="">
-                            <input type="checkbox" name="done">
-                        </form>
-                    </div>
+                if(mysqli_num_rows($select) > 0){
 
-                    <div class="middle">
-                        <h4>Coding Today...</h4>
-                    </div>
+                while($row=mysqli_fetch_assoc($select)){    
 
-                    <div class="stop">
-                        <a href="#"><img src="./images/delete.ico"></a>
-                    </div>
-
-                </div>
+                ?>
 
                 <div class="main-content">
 
@@ -54,7 +74,7 @@ include("connection.php");
                     </div>
 
                     <div class="middle">
-                        <h4>Do Body Workout...</h4>
+                        <h4><?php echo $row['task_name'];?></h4>
                     </div>
 
                     <div class="stop">
@@ -63,43 +83,14 @@ include("connection.php");
 
                 </div>
 
-                <div class="main-content">
+                <?php    
+                }
+                }
 
-                    <div class="start">
-                        <form action="">
-                            <input type="checkbox" name="done">
-                        </form>
-                    </div>
+                else{
+                ?>    
 
-                    <div class="middle">
-                        <h4>Go to Church...</h4>
-                    </div>
-
-                    <div class="stop">
-                        <a href="#"><img src="./images/delete.ico"></a>
-                    </div>
-
-                </div>
-
-                <div class="main-content">
-
-                    <div class="start">
-                        <form action="">
-                            <input type="checkbox" name="done">
-                        </form>
-                    </div>
-
-                    <div class="middle">
-                        <h4>Go to a meeting...</h4>
-                    </div>
-
-                    <div class="stop">
-                        <a href="#"><img src="./images/delete.ico"></a>
-                    </div>
-
-                </div>
-
-                <!-- <div class="content">
+                    <div class="content">
 
                     <div class="img-cont">
                         
@@ -108,7 +99,11 @@ include("connection.php");
                         <h4>No Tasks Available...</h4>
                     </div>
 
-                </div> -->
+                    </div>
+                  
+                <?php  
+                }
+                ?>
     
             </div>
 
