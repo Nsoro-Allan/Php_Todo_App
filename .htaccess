@@ -4,6 +4,7 @@ RewriteRule ^login/?$ index.php [L]
 RewriteRule ^register/?$ register.php [L]
 RewriteRule ^home/?$ home.php [L]
 RewriteRule ^logout/?$ logout.php [L]
+RewriteRule ^delete_task/?$ delete_task.php [L]
 
 
 RewriteCond %{REQUEST_FILENAME} !-f

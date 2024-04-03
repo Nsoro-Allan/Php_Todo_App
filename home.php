@@ -78,7 +78,7 @@ if(isset($_POST['add_task'])){
                     </div>
 
                     <div class="stop">
-                        <a href="#"><img src="./images/delete.ico"></a>
+                        <a href="delete_task?task_id=<?php echo$row['task_id'];?>"><img src="./images/delete.ico"></a>
                     </div>
 
                 </div>
